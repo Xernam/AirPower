@@ -78,19 +78,21 @@ while run:
   if event.type == pygame.QUIT:
    run = False
   if (x==0 and y==100) and PTComplete:
-  PTComplete = False
-  win.fill((0,0,25))
-  pygame.display.update()
-  pygame.time.delay(500)
-  win.fill((0,0,75))
-  pygame.display.update()
-  pygame.time.delay(500)
-  win.fill((0,0,150))
-  pygame.display.update()
-  pygame.time.delay(500)
-  win.fill((0,0,255))
-  pygame.display.update()
-  pygame.time.delay(500)
+   PTComplete = False
+   win.fill((0,0,25))
+   pygame.display.update()
+   pygame.mixer.music.load('win95.mp3')
+   pygame.mixer.music.play(0)
+   pygame.time.delay(500)
+   win.fill((0,0,75))
+   pygame.display.update()
+   pygame.time.delay(500)
+   win.fill((0,0,150))
+   pygame.display.update()
+   pygame.time.delay(500)
+   win.fill((0,0,255))
+   pygame.display.update()
+   pygame.time.delay(500)
  
  
  
