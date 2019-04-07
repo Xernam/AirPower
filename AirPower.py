@@ -77,8 +77,20 @@ while run:
  for event in pygame.event.get():
   if event.type == pygame.QUIT:
    run = False
- if x==0 and y==100:
+  if (x==0 and y==100) and PTComplete:
   PTComplete = False
+  win.fill((0,0,25))
+  pygame.display.update()
+  pygame.time.delay(500)
+  win.fill((0,0,75))
+  pygame.display.update()
+  pygame.time.delay(500)
+  win.fill((0,0,150))
+  pygame.display.update()
+  pygame.time.delay(500)
+  win.fill((0,0,255))
+  pygame.display.update()
+  pygame.time.delay(500)
  
  
  
